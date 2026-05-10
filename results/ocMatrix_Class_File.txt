@@ -1,0 +1,4 @@
+Dimensions Classification APRE
+         1    0.92308    0.57143
+         2    0.96581    0.80952
+         3    0.99715    0.98413
