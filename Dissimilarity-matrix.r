@@ -2,12 +2,16 @@
 # Suggestion to use smacof library from the user guide linked at https://www.unm.edu/~wcroft/MDS.html
 # Documentation and linked code from https://www.rdocumentation.org/packages/smacof/versions/2.1-7/topics/plot.smacof
 
-install.packages('smacof')
+#install.packages('smacof')
+rm(list=ls(all=TRUE)) #  Remove all objects just to be safe
+
+Directory_Name <- 'P:'
+
+setwd(Directory_Name)
 library('smacof')
 df <- read.csv("integer_dissimilarity.csv")
-rownames(df) <- df[,1]
-#remove first column from data frame
-df <- df[,-1]
+View(df)
+rownames(df) <- colnames(df)
 
 # for data in a different shape you may need 
 # r <- cor(PVQ40, use = "pairwise.complete.obs")
