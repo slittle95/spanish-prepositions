@@ -67,6 +67,7 @@ print("samesies", samesies)
 
 with open('integer_dissimilarity.csv', 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(column_names)
     for i in range(len(column_names)):
       inner_list = []
       for j in range(len(column_names)):
